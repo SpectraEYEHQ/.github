@@ -96,26 +96,6 @@ Plug Spectra EYE into the tools your team already uses.
 
 ---
 
-## Quick Start
-
-> **Option A: SaaS** — Sign in, create your first monitor, and invite your team.  
-> **Option B: Self-host (advanced)** — Use the backend (PHP) and SPA frontend (React + Vite).
-
-**Requirements (self-host):**
-- PHP 8.2+ with extensions commonly used for APIs
-- MySQL 8+
-- Node.js 20+ (for the SPA frontend)
-- A reverse proxy (Nginx/Apache) with HTTPS
-
-**High-level steps:**
-1. Deploy backend API and configure database connection.  
-2. Build & deploy SPA frontend (or use the hosted frontend).  
-3. Create an organization, invite users, set roles.  
-4. Add monitors/heartbeats and configure alert channels.  
-5. Publish your public status page.
-
----
-
 ## API & SDKs
 
 ### Heartbeat Example
@@ -139,11 +119,6 @@ curl -X POST "https://<your-host>/api/v1.1/heartbeat/<YOUR_HEARTBEAT_TOKEN>"   -
 
 > Explore the OpenAPI spec and SDKs for full endpoint details.
 
-### SDKs
-- **JavaScript/TypeScript:** `@spectraeye/sdk-js` (examples & helpers)  
-- **PHP:** `spectraeye/sdk-php`  
-- **Python:** `spectraeye-sdk`  
-
 ---
 
 ## Security
@@ -152,37 +127,7 @@ curl -X POST "https://<your-host>/api/v1.1/heartbeat/<YOUR_HEARTBEAT_TOKEN>"   -
 - Encrypted credentials & secrets (never store plaintext tokens)  
 - GDPR-aware logging and data retention settings
 
-If you believe you’ve found a security issue, please see **SECURITY.md** or email **security@spectraeye.app**.
-
----
-
-## Roadmap
-- Advanced SLOs (burn rate alerts)  
-- Synthetic journeys & multi-step checks  
-- Deeper integrations (PagerDuty, Opsgenie, Jira)  
-- Native SSO (OIDC/SAML)  
-- Terraform provider & CLI
-
----
-
-## Contributing
-We love community contributions — from docs and examples to SDKs and integrations.
-
-1. Fork the repo and create a feature branch.  
-2. Run tests/lint locally.  
-3. Open a PR with a clear description and screenshots if relevant.
-
-See **CONTRIBUTING.md**, **CODE_OF_CONDUCT.md**, and issue templates for guidance.
-
----
-
-## License
-Unless otherwise noted, Spectra EYE open-source repos are released under the **MIT License**. See the specific repo for details.
-
----
-
 ## Contact
 - **Website:** https://spectraeye.app  
-- **Email:** hello@spectraeye.app · **Security:** security@spectraeye.app  
-- **X (Twitter):** @SpectraEYE · **LinkedIn:** Spectra EYE  
+- **Email:** contact@spectraeye.app ·
 - **Tagline:** _Powered by Spectra EYE_
